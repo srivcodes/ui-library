@@ -1,19 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram</title>
-  <link rel="icon" type="image/png" href="https://img.icons8.com/fluent/2x/instagram-new.png"/>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Component Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
-  <div id="navbar">
-  <img id="brand" src="https://www.freepngimg.com/thumb/logo/76861-web-instagram-script-typeface-typography-font.png" alt="brandname"><br>
-  <input id="search"type="text" autocapitalize="none" placeholder="Search">
-  
-  
+<h1>SriV's Component Library</h1> 
+<h2>Avatar</h2>
+    <img src="data:image/png;base64,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" alt="Avatar" class="avatar">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA1VBMVEX///9jtlVitlRluVdhtVNetE9ZsklktlcgVhddtE5WsUYeUxUASwAASAAbUBL9//34/PcQTwAARQDn9OUbVBDa7dfx+PBquVyp1aKbzpOGxXyy2ax4v2yOyYWUy4u/37rK5sY7fDFaqU1KkT+htJ7f79x9wXLL5cdwu2QwayZDhzg1dCtdrE8mXx1UnkcAQQCSqY/L1snh6OB+mXtlhmG7ybl2knI0Yy3Y4ddZfVS+3Lqt2KZNrTqh0JkqZCBHjDywvq5kpVpNdEhPdko9aDdhglyLo4cYYFjQAAAKu0lEQVR4nO2c6XbavBaGsSYPGIPBmGBImAJhCplD2n5pc9I2939JR5INOMQ2hiaxnKXnR1fL0KXXW9qTJAoFiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCSSXOIOK1kP4WNpYcMrZz2ID6TmEaAY3ayH8WGUWwgrioKPsx7IR9FpUAMqqgqUL7kS3ZZiIKoPKKpC6lmP5t1xW23Dt5/CIJ2sB/TeDBWClBD4JOsRvTOVNg7rgwCNsx7SO3OiK2pYIl2ItazH9J6Uj4myrfBLRcTKWFfe8JUioqvitwIVQL5MRHQbUQLpQmxlPbJ3ouzpqxi4ZUTwRYz4g0So4+hfIyR2YgUqipHjvKbmjXje6Xo6UEC0PlVByM16oAfiPhKsN9joRwkWZPO0mfVQD6OlU8MpBjNiGyXoUxWQSyO6I4Pqg34weIwI9WGJ5HvWw92fWoOJAkHOkuRnWBqXwwpjqCA/A6XFQ7lQqBsJCqkPMnKXuoUSNIDpGnONOE/K0NVm7gqM0VogLR6GNOfGIF6hfpI/P/NjUyRBv08xjhNIo6Gav57p2asqkCdlx1FZd2DjIKPpnuRmqnZJyGCqihrURkcx4YKa0G9jDMcGaWc88LR0jK0ZadSSwoVf47cMrKBGPoqMs22BfCGeGXRFRphQBYjJemTRBI1zobDSQFtaAAvnsQERsanZMfjCJWdZjz4NZxFSYKxCVcUjGi1ZekAlYi/r0afhJMJp0uQ73oZjl7UYA2vnwJtGmVChdqIBJDIisnA4Dh4KyEXLJkIhYCExNh6yzDWInip7FOLS8fgMK9OSMMJpYrzVCQ4ZMfx3MsxaRyz1/4jvJqIqQXVbSqxI/TFjHbGUGwD70awW41LiBYYRN+gfEQB0f4YlrLid0CRV0JBY08G67Vk30hosCv0oYykxNPniC9zE4/b+0h42VAXdp2GZGg0Kuu9rePv+QIV+EicedcIlIcM/dcAFHwhQhCyHW8Q3wCqvjEtg0mAI2dFo+u5TBUYQsD18sLMR82zGOtte+YmhcbBCMTun3joEGrX1K4dJRP8JGRBHgWfZpM7DpA5wDDSdBcZISIGV8UohTZ2DXaS9jcg+jXUhFyEr0UOeM/AUtf0zG2B4QvpRiosQ9aOqLxMER/GOyB4KWb2lYyEnKMdl2pCKfEW4zWP2euqms5+uN0WtKgp8G4aKQ5AJVdfztJvWiPR7GIu9NeM2gMoHqih+44Uvp0ojXV5DP0U8nilU6kfesZBLkU5I6kWpSuhLxO2a/2pgRIggjDUnK7t4/8k9ahCCDSF7UUwh2+Zcu1SEm8ONDdXJ+fk0YcbqR26tVmup/NwpFvLMgtugplg7U24YnbSbwFcFe5amWbPt9hSAMHgJIl3XsY54PBVUIWZHEtS17wS+HYOACCdFjUrsbymcz7Tpll1VYW149mZfSQ0dYIPzc6tYPN/+yHlRswbMiiCkEwqqsBm1N6gqq1kL0XQy62/t1qjnmlbsve2sCllaVGJ3sFdy4HrNbaw1tSxrEaFQxM2ZWvKJrhhgfzCPaI7zDWPRqO+TgYYkRu2YAiFPDJ8dpjAGQ8CdC6owyhwHAYVseu8xSyNnZhggZCcqfRsfDmZzuMPxiqjQbaDoI+pvFS4sa5o8pYGICgtnGKU14syyJskShVRYqKOUO2pApZnMJPFpiKmwMGwkngEOGXFR1Io/c6iwUDlO2SClS5FKjHU3UOCLXuw02+7FCKhEOlGDapGWlAC9/hIwxGvYdNUjnmh1yW5/A5X5YjGj1eJ0JRFtykr+bSJg9QQRafAWaVffJXH+s0grClYPT1b1fagxQJNSbBwLmHi3kYJ899ClUSMpnsOeRf1MsWidT/xykXc+oD97aVmh656QlxJY/Qv8c751gEOxH2znaLCvnU9mvelinb0hdvqbyQQKMsY/xFuCHH42NpBYC18xnE+3K1xIZ3G4Gga8g8E6jYiMOwKWTT4s8VZptsWPifAMLpAzsax58rpUV1cyDLUlrD5+0YAPl3hskJsjUbzHliiQPRmEiUG8ru9fKkI2vNndCt8WeoOto+ZqntJVF9lrWkOnKHXDJ9+H/k5OvTUyxNwADlpt7IYTGIaPrLMMTUvMslEjUFTreLpB46mgt0lbgSbqD/WT1mZPX4E/tah22tqGCqZxtOyePbYJ8ae6oPcQQzU+wCTkTOGvYuI0VRTP80aK4f9QBvugoGeE3U1ewpRuAiIc7FKIMUaAz/Dgh07E/CmX8giH78iEbNgrFgcJCld5zfoFYS9cUFcTmazBWTFpHW4/EGGX4cbVvFE4LWo/o/dGo3UTQQ+Xsh37SMC8yErBN/YFcL6INLqox2cLw7iNCziwNKv3JgFXZpb1K8qKwiqsodimxJRKnCzmYZGwf27FxElhFZbbsXUh2+IuWsXJAq6Y92imY0W7WEHDYSGUi0ZI/FVkZa/1s9eb9QaD6USj/9IiLQgFvrv2PWEHEc4HM83SWG1fZGKp2pka7Ur5rW8xGepKQvuCLsKpZjGYRmt7w3uDkPu/AbvOsEHYHywWg2nv1yK2pw+FbQYzOru3EFeeJu59oPj3ZQXlX+4frBHyGMaazgGnnl+jCj1JC7tX4k6gYohZOq1I/PGSFBakNaaYd0k2nBx0qmalj/5hiJqyrag0Yi/CptAHdOEFBj+pl24//60+/VjQjv4r3JG+330uNXgiOB/6KJVHsp9H5S19HJzyzgf1sZFuNfrbFVgnhHhiB4ltKq02AUlpOMPfLDTA6OSo1c3J/Azj/zzNWzuqGzeEDWP8oy5wFrqDM8J/zDrcGg4aboBaziD9frOTQ8uFqRxhgrnPCQcPhInebnaGV6WLp6xH+O+4HW/c7wMEGAhh5lIaJ12ell2VNFPw/CwdV6Xq/9oA61gdj7zjx85m2f217fssR/ZeXJrmaYFdhnG3PcqDrZkPmYzpfbm3zauYt26+hhF/O+Z1zFvXJceOey8/lJeOE+tP7m375jMH8yFUbGcZG9Kvq1r+jXhtOs/xR9Ruv8BKfKg6t/HvXpv5d6d3pcSl9mLaCQ8gFzyZ9mXC29eOVsr5Sry0zaek92lMfPmkoXwQCQGf82BqtoCHZffgeVdQ/+aU7j5pLB+D7WjJBcRTyfnzSWP5ENxSUjhkVJZONc8BIzkcci5N59unjOVj2BEOGTRg5Dnq02BwuuszL3Z+o/71N1srPe36lGs7dj6NWL60ba36e3ezMK+V8MOSBvPkhCbg+iKXRdRp1XHM23TNtPscGvHhuaTZy7TJynUpb+7UfTEdp5TSgIycrcTK6dLWbO1pj6/QSjg/K7F8uqQGrN7s187OT0+q/MT1/d53VdEiKh+V8KnGFuCfxIowmptcJDYPyxKNEKk96CtodnqxMvzDAU/oU3hi+v4cWs5S9/s7+H8uBN12u7rQnIP1USNqml/sn5a0UlLzKjvuqppz+w8tl1PTWZYL5Rsa/f+KufFdvqVpzCFOZvX9pWOeFu5NrXovamuqfMoW4osfCA8Y5F1JWzKBYk5RnyuHJjPO8+397bN2gO+n1aSjVXdWzJlSua/ajmPb9I/q/s2X6yr1NsL3h6/+aqZZMm3n2wFu9fKimocE3H24urp6OOyUxd2TqE5GIpFIJBKJRCKRSCQSiUTyT/wfrO6w98TxLtwAAAAASUVORK5CYII=" alt="Avatar" class="avatar">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_NZtVEASHpIu5VIDYpQI81DkayLObNgqWw&usqp=CAU" alt="Avatar" class="avatar">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOY0RfU3RVvy3xFTR7m_8l4H0svY2fOZMYnQ&usqp=CAU" alt="Avatar" class="avatar1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRonCV4MQ8uGdAX01zGy0iWm9eXba09qj-0aA&usqp=CAU" alt="Avatar" class="avatar1">
+<hr/>
+<h2>Icons With Badge</h2>
+    <a href="#" class="notification">
+    <span>Inbox</span>
+    <span class="badge">3</span>
+    </a>
+<br><br>
+    <a href="#" class="notification">
+    <span>Wishlist</span>
+    <span class="badge">7</span>
+    </a>
+<br><br>
+    <a href="#" class="notification">
+    <span>Cart</span>
+    <span class="badge">9</span>
+    </a>
+<hr>
+<h2>Nav Bar</h2>
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">About</a>
+    <a href="#contact">Products</a>
+    <a href="#about">Contact Us</a>
   </div>
+<h2>Alert</h2>
+    <div id="alert-div-success">
+        <h3>Drench.com says:</h3>
+        <div>This is a success alert</div><br/>
+        <button id="alert-btn-success">OK</button>
+    </div>
+<br>
+    <div id="alert-div-warning">
+        <h3>Drench.com says:</h3>
+        <div>This is a warning alert</div><br/>
+        <button id="alert-btn-warning">OK</button>
+    </div>
+<br>
+    <div id="alert-div-info">
+        <h3>Drench.com says:</h3>
+        <div>This is an information alert</div><br/>
+        <button id="alert-btn-info">OK</button>
+    </div>
+<br>
+    <div id="alert-div-danger">
+        <h3>Drench.com says:</h3>
+        <div>This is an information alert</div><br/>
+        <button id="alert-btn-danger">OK</button>
+    </div>
+<hr/>
+<h2>Buttons</h2>
+    <button id=pri-btn>Primary Button</button>
+    <button id=sec-btn>Secondary Button</button>
+    <button id=ani-btn>Animated Button 1</button>
+    <button id=create-btn>Animated Button 2</button>
+    <button id=edit-btn>Edit Button</button>
+    <button id=del-btn>Delete Button</button>
+ <h3>Floating Action Button and Submit Button</h3>
+    <br>
+    <button id="float-btn">+</button> <span><---- this here is a Floating Action Button</span>
+    <br><br>
+    <button id="submit-btn">Submit</button> <span>  <---- this here is a Submit Button (Obvio)</span>
+
+<h3>Icon buttons with text:</h3>
+    <button class="btn"><i class="fa fa-home"></i> Home</button>
+    <button class="btn"><i class="fa fa-bars"></i> Menu1</button>
+    <button class="btn"><i class="fa fa-trash"></i> Menu2</button>
+    <button class="btn"><i class="fa fa-close"></i> Menu3</button>
+    <button class="btn"><i class="fa fa-folder"></i> Menu4</button>
+
+<h3>Social Media Icons</h3>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+<br>
+<hr>
+<h2>Images</h2>
+    <h3>Round Image</h3>
+    <img id="farmer-dp" src="https://www.bollywoodhungama.com/wp-content/uploads/2020/05/No-remakes-for-Hrithik-Roshan.jpg" alt="farmer">
+    <h3>Responsive Images</h3>
+    <img id="sample1" src="https://www.bollywoodhungama.com/wp-content/uploads/2020/05/No-remakes-for-Hrithik-Roshan.jpg" alt="sample1">
+    <img id="sample2" src="https://www.bollywoodhungama.com/wp-content/uploads/2020/05/No-remakes-for-Hrithik-Roshan.jpg" alt="sample2">
+    <img id="sample3" src="https://www.bollywoodhungama.com/wp-content/uploads/2020/05/No-remakes-for-Hrithik-Roshan.jpg" alt="sample3">
+<hr>   
+<h2>Input</h2>
+    <input id="SearchBar" type="text" placeholder="🔎 Search here..."><br><br>
+    <input id="Comments" type="text" placeholder="Leave Your Comments Here"><br><br>
+<hr>
+<h2>Cards</h2>
+<div class="cards-container flex-center mb">
+            <div class="card pointer">
+                <img class="responsive-img" src="https://m.media-amazon.com/images/I/81JtuzcJB7L._AC_UL640_FMwebp_QL65_.jpg" alt="gardening op">
+                <div class="card__description">
+                    <div class="primary">
+                        <h3 class="rm">White Planter</h3>
+                        <small class="light">Grow up to 15 different plants with this 5-tiered vertically stackable pot set.</small>
+                        <div class="price">
+                            <h5 class="rm"><strong>Rs. 1,239 </strong></h5>
+                            <h5 class="rm light strikethrough">Rs.1400 ></h5>
+                            <h5 class="rm discount">(12% OFF)</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ </div>
+
+ <div class="cards-container flex-center mb">
+    <div class="card pointer">
+        <img class="responsive-img" src="https://m.media-amazon.com/images/I/81JtuzcJB7L._AC_UL640_FMwebp_QL65_.jpg" alt="gardening op">
+        <span class="card_badge">OUT TODAY!</span>
+        <!-- <span class="card_badge">SALE</span> -->
+        <div class="card__description">
+            <div class="primary">
+                <h3 class="rm">White Planter</h3>
+                <small class="light">Grow up to 15 different plants with this 5-tiered vertically stackable pot set.</small>
+                <div class="price">
+                    <h5 class="rm"><strong>Rs. 1,239 </strong></h5>
+                    <h5 class="rm light strikethrough">Rs.1400 ></h5>
+                    <h5 class="rm discount">(12% OFF)</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dismiss-card pointer">
+    <img class="responsive-img" src="https://www.magnonindia.com/wp-content/uploads//2019/07/Interior-decorator-in-Marathahalli-1080x675.jpg" alt="">
+    <span class="card_badge">SALE!</span>
+    <div class="dismiss-card__description">
+        <h3>Wall Garden</h3>
+        <p>Grow up to 15 different plants with this 5-tiered vertically stackable pot set.</p>
+        <button class="btn btn-primary">Let's Go!</button>
+    </div>
+</div> 
+
+<div class="cards-container flex-center mb">
+    <div class="card pointer">
+        <img class="responsive-img" src="https://www.bollywoodhungama.com/wp-content/uploads/2020/05/No-remakes-for-Hrithik-Roshan.jpg" alt="gardening op">
+        <div class="primary">
+            <h3 class="rm">Hritik Roshan</h3>
+            <h4 class="light">SriV Likes!!</h4>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+    
 </body>
 </html>
